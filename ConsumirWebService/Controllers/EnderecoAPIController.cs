@@ -22,7 +22,7 @@ namespace ConsumirWebService.Controllers
             _enderecoDao = enderecoDao;
         }
 
-        //Get:api/ConsultaCEP/ListarEnderecos
+        //Get:api/Endereco/ListarEnderecos
         [HttpGet]
         [Route("ListarEnderecos")]
         public IActionResult ListarEnderecos()
@@ -30,7 +30,7 @@ namespace ConsumirWebService.Controllers
             return Ok(_enderecoDao.Listar());
         }
 
-        //Get:api/ConsultaCEP/ListarEndereco/81490506
+        //Get:api/Endereco/ListarEndereco/81490506
         [HttpGet]
         [Route("ListarEndereco/{txtCep}")]
         public IActionResult ListarEndereco(string txtCep)
